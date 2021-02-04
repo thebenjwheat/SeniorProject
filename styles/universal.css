@@ -1,0 +1,47 @@
+body{
+	width: 100%;
+	margin: 0;
+	font-family: Helvetica;
+}
+a:hover, a:visited, a:link, a:active{
+	color:#ffffff;
+	text-decoration: none;
+}
+.banner{
+	height: 70px;
+	background-color: #303030;
+	color: #ffffff;
+	padding: 10px;
+	font-size: 12pt;
+}
+.banner img{
+	height: 50px;
+	margin-top: 10px;
+}
+.banner ul{
+	list-style: none;
+	float: right;
+	margin: 0;
+	margin-right: 50px;
+	vertical-align: middle;
+	line-height: 70px;
+}
+.banner ul li{
+	display: inline;
+	padding-left: 15px;
+}
+.banner ul li a:hover{
+	color: #009216;
+}
+#applyHere{
+	padding: 10px;
+	margin: 0;
+	float: right;
+	background-color: #005d0e;
+	margin-right: 10px;
+	border-radius: 0 0 5px 5px ;
+	color: #ffffff;
+}
+#phoneNum{
+	color: #009216;
+}
