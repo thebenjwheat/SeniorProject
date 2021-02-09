@@ -45,3 +45,7 @@ a:hover, a:visited, a:link, a:active{
 #phoneNum{
 	color: #009216;
 }
+
+#logo:hover{
+	transform: scale(1.05);
+}
