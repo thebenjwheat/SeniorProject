@@ -13,6 +13,8 @@ a:hover, a:visited, a:link, a:active{
 	color: #ffffff;
 	padding: 10px;
 	font-size: 12pt;
+	position: fixed;
+	width: 100%;
 }
 .banner img{
 	height: 50px;
@@ -41,6 +43,9 @@ a:hover, a:visited, a:link, a:active{
 	margin-right: 10px;
 	border-radius: 0 0 5px 5px ;
 	color: #ffffff;
+	position: fixed;
+	top: 90px;
+	left: 90%;
 }
 #phoneNum{
 	color: #009216;
