@@ -1,7 +1,7 @@
 body{
 	width: 100%;
 	margin: 0;
-	font-family: Helvetica;
+	font-family: proxima-nova, sans-serif;
 }
 a:hover, a:visited, a:link, a:active{
 	color:#ffffff;
@@ -12,7 +12,7 @@ a:hover, a:visited, a:link, a:active{
 	background-color: #303030;
 	color: #ffffff;
 	padding: 10px;
-	font-size: 12pt;
+	font-size: 14pt;
 	position: fixed;
 	width: 100%;
 }
@@ -30,7 +30,7 @@ a:hover, a:visited, a:link, a:active{
 }
 .banner ul li{
 	display: inline;
-	padding-left: 15px;
+	padding-left: 20px;
 }
 .banner ul li a:hover{
 	color: #009216;
