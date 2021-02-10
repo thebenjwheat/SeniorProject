@@ -45,7 +45,7 @@ a:hover, a:visited, a:link, a:active{
 	color: #ffffff;
 	position: fixed;
 	top: 90px;
-	left: 90%;
+	right: 50px;
 }
 #phoneNum{
 	color: #009216;
