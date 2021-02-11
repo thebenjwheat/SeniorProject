@@ -1,7 +1,9 @@
 
 a {
 	text-align: center;
-	font-size: 15px;
+	font-size: 35px;
+	text-decoration: none;
+	color: black;
 }
 
 th,td {
@@ -28,10 +30,20 @@ table {
 	height: 500px;
 }
 
+.regular {
+	text-align: center;
+	font-size: 30px;
+	color: black;
+	pointer-events:none;
+
+}
+
 .block {
 	display: block;
 	font-size: 20px;
 	padding-top:5px;
+	color: black;
+	pointer-events:none;
 }
 
 #contact_us{
