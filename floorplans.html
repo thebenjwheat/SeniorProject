@@ -7,6 +7,33 @@
 		<link rel="stylesheet" type="text/css" href="./styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="./styles/javascript.css">
 	</head>
+
+	<script>
+		let inventoryData = [
+			{ name: 'A1', available: 5},
+			{ name: 'B1', available: 5},
+			{ name: 'B1A', available: 5},
+			{ name: 'C1', available: 5},
+			{ name: 'C2', available: 5}									
+		];
+
+		window.onload = () => {
+			loadTableData(inventoryData);
+		};
+
+		function loadTableData(inventoryData) {
+			const tableBody = document.getElementById('tableData');
+			let dataHtml = '';
+
+			for(let inventory of inventoryData) {
+				dataHtml += `<tr><td>${inventory.name}</td><td>${inventory.available}</td></tr>`;
+			}
+			console.log(dataHtml)
+
+			tableBody.innerHTML = dataHtml;
+		};
+
+	</script>
 	<body>
 		<header class="banner">
 			<a href="index.html">
@@ -23,6 +50,7 @@
 		</header>
 		<p id="applyHere">Apply Here</p>
 		
+
 		<table>
 			<tr>
 				<td>
@@ -75,6 +103,17 @@
 				</td>
 			</tr>	
 		</table>	
+
+		<table class="inventory">
+			<thead>
+				<tr>
+					<th>Floorplan</th>
+					<th># of Available Rooms</th>
+				</tr>
+			</thead>
+
+			<tbody id="tableData"></tbody>
+		</table>
 
 
 

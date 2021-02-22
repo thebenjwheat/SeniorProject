@@ -7,19 +7,25 @@ a {
 }
 
 th,td {
-	padding: 20px;
-	padding-top: 15%;
+	padding: 8px;
 	text-align: center;
-	font-size: 15px;
+	font-size: 25px;
 	margin-left: auto;
 	margin-right: auto;
 	border-bottom: 2px solid grey;
+	padding-top: 10%;
+	padding-bottom: 5%;
 }
 
 table {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+	border-collapse:collapse;
+}
+
+.inventory {
+	padding-bottom: 5%;
 }
 
 .floorplan {
@@ -35,7 +41,6 @@ table {
 	font-size: 30px;
 	color: black;
 	pointer-events:none;
-
 }
 
 .block {
