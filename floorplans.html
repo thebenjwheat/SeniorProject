@@ -1,39 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Floorplans|Grove at Spring Branch Apartments</title>
+		<title>Floorplans | The Grove at Spring Branch Apartments</title>
 		<link rel="icon" href="./images/tree.png">
 		<link rel="stylesheet" type="text/css" href="./styles/universal.css">		
 		<link rel="stylesheet" type="text/css" href="./styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="./styles/javascript.css">
 	</head>
 
-	<script>
-		let inventoryData = [
-			{ name: 'A1', available: 5},
-			{ name: 'B1', available: 5},
-			{ name: 'B1A', available: 5},
-			{ name: 'C1', available: 5},
-			{ name: 'C2', available: 5}									
-		];
+	<script src="inventory.js"></script>
 
-		window.onload = () => {
-			loadTableData(inventoryData);
-		};
-
-		function loadTableData(inventoryData) {
-			const tableBody = document.getElementById('tableData');
-			let dataHtml = '';
-
-			for(let inventory of inventoryData) {
-				dataHtml += `<tr><td>${inventory.name}</td><td>${inventory.available}</td></tr>`;
-			}
-			console.log(dataHtml)
-
-			tableBody.innerHTML = dataHtml;
-		};
-
-	</script>
 	<body>
 		<header class="banner">
 			<a href="index.html">
@@ -54,7 +30,7 @@
 		<table>
 			<tr>
 				<td>
-					<a href="A1floorplans.html" target="_blank">A1</a>
+					<a class="fplink" href="A1floorplans.html">A1</a>
 					<a class="block">1 BED | 1 BATH | 712-776 SqFt</a>
 					<a class="block">Price: $1000</a>
 				</td>
@@ -64,7 +40,7 @@
 			</tr>
 			<tr>
 				<td>
-					<a href="B1floorplans.html" target="_blank">B1</a>
+					<a class="fplink" href="B1floorplans.html">B1</a>
 					<a class="block">2 BED | 2 BATH | 1014-1101 SqFt</a>
 					<a class="block">Price: $1375</a>
 				</td>
@@ -74,7 +50,7 @@
 			</tr>
 			<tr>	
 				<td>
-					<a href="B1Afloorplans.html" target="_blank">B1A</a>
+					<a class="fplink" href="B1Afloorplans.html">B1A</a>
 					<a class="block">2 BED | 2 BATH | 1101 SqFt</a>
 					<a class="block">Price: $1375</a>
 				</td>
@@ -84,7 +60,7 @@
 			</tr>
 			<tr>
 				<td>
-					<a href="C1floorplans.html" target="_blank">C1</a>
+					<a class="fplink" href="C1floorplans.html">C1</a>
 					<a class="block">3 BED | 2 BATH | 1300 SqFt</a>
 					<a class="block">Price: $1650</a>
 				</td>
@@ -94,7 +70,7 @@
 			</tr>
 			<tr>	
 				<td>
-					<a href="C2floorplans.html" target="_blank">C2</a>
+					<a class="fplink" href="C2floorplans.html">C2</a>
 					<a class="block">3 BED | 2 BATH | 1293-1440 SqFt
 					<a class="block">Price: $1650</a>
 				</td>
@@ -115,7 +91,21 @@
 			<tbody id="tableData"></tbody>
 		</table>
 
-
+		<footer>
+			<ul id="footerNav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="floorplans.html">Floorplans</a></li>
+				<li><a href="amenities.html">Amenities</a></li>
+				<li><a href = "neighborhood.html">Neighborhood</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul id="altNav">
+				<li><a href="Terms.html">Terms of Use</a></li>
+				<li><a href="privacy.html">Privacy Policy</a></li>
+				<li><a href="access.html">Accessibility Statement</a></li>
+				<li><a href = "login.html">Login</a></li>
+			</ul>
+		</footer>
 
 
 	</body>
