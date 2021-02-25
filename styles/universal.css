@@ -3,8 +3,8 @@ body{
 	margin: 0;
 	font-family: proxima-nova, sans-serif;
 }
-a:hover, a:visited, a:link, a:active{
-	color:#ffffff;
+a:visited, a:link, a:active{
+	color: #FFFFFF;
 	text-decoration: none;
 	font-size: 15px;
 }

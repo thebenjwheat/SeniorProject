@@ -62,18 +62,56 @@ footer{
     transform: rotateZ(-135deg);
 }
 #carousel{
-	width:100%;
 	height: 400px;
 }
 #carousel img{
 	height: 300px;
 }
+#photo{
+	background-image: url("../images/family.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 400px;
+	width: 50vw;
+	padding: 0;
+}
+.button{
+
+	color: black;
+	width: 150px;
+	height: 50px;
+	background-color: #005d0e;
+	border-radius: 30px;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	box-shadow: 0px 0px 5px grey;
+	position: absolute;
+	right: 50%;
+	transform: translate(50%);
+}
+.button a{
+	font-size: 15pt;
+	color: #FFFFFF;
+}
 .content{
-	text-align: justify;
+	text-align: center;
 	width: 80vw;
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+	font-weight: 4000;
+}
+.contentTable{
+	width: 100%;
+	border-collapse: collapse;
+}
+.contentTable tr:nth-child(2){
+	background-color: grey;
+}
+.contentTable tr td{
+	padding: 20px;
 }
 .head{
 	text-align: center;
