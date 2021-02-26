@@ -8,6 +8,11 @@ body{
 	text-decoration: none;
 	font-size: 15px;
 }
+footer a:visited, a:link, a:active{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 15px;
+}
 .banner{
 	height: 70px;
 	background-color: #303030;
@@ -82,4 +87,9 @@ body{
 	padding-left: 1px;
 	border-right: 1px solid #FFFFFF;
 	text-align: center;
+}
+footer{
+	color: #FFFFFF;
+	background-color: #012907;
+	height: 150px;
 }
