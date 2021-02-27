@@ -1,14 +1,17 @@
-body{
-	width: 100%;
+body, html{
 	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
 	font-family: proxima-nova, sans-serif;
 }
-.banner a:visited, a:link, a:active{
+.banner a:visited, .banner a:link, .banner a:active{
 	color: #FFFFFF;
 	text-decoration: none;
 	font-size: 15px;
 }
-footer a:visited, a:link, a:active{
+footer a:visited, footer a:link, footer a:active{
 	color: #FFFFFF;
 	text-decoration: none;
 	font-size: 15px;
@@ -21,7 +24,7 @@ footer a:visited, a:link, a:active{
 	font-size: 14pt;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 }
 .banner img{
 	height: 50px;
@@ -29,9 +32,10 @@ footer a:visited, a:link, a:active{
 }
 .banner ul{
 	list-style: none;
-	float: right;
 	margin: 0;
-	margin-right: 50px;
+	float: right;
+	position: relative;
+	right: 50px;
 	vertical-align: middle;
 	line-height: 70px;
 }

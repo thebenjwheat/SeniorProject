@@ -1,6 +1,9 @@
 body, html{
+	margin: 0;
+	padding: 0;
 	height: 100%;
 	width: 100%;
+	box-sizing: border-box;
 }
 #background{
 	background-image: url("../images/livingRoom.jpg");
@@ -96,13 +99,14 @@ body, html{
 }
 #carousel div{
 	background-color: #005d0e;
-	border-radius: 5px 5px 5px 5px;
 }
 .prev{
+	z-index: -1;
 	text-align: center;
 	width: 25px;
 	background-color: #005d0e;
-	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0px 0px 3px #000000;
+	border-radius: 5px 0px 0px 5px;
 	color: #FFFFFF;
 	font-size: 28pt;
 	float: left;
@@ -110,10 +114,12 @@ body, html{
 	bottom: 175px;
 }
 .next{
+	z-index: -1;
 	text-align: center;
 	width: 25px;
 	background-color: #005d0e;
-	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0px 0px 3px #000000;
+	border-radius: 0px 5px 5px 0px;
 	color: #FFFFFF;
 	font-size: 28pt;
 	float: right;
@@ -130,7 +136,7 @@ body, html{
 	padding: 0;
 }
 .button{
-
+	z-index: -1;
 	color: black;
 	width: 150px;
 	height: 50px;
@@ -138,33 +144,48 @@ body, html{
 	border-radius: 30px;
 	text-align: center;
 	line-height: 50px;
-	vertical-align: middle;
 	box-shadow: 0px 0px 5px grey;
 	position: absolute;
 	right: 50%;
 	transform: translate(50%);
 }
 .button a{
+	text-decoration: none;
 	font-size: 15pt;
 	color: #FFFFFF;
 }
 .content{
 	text-align: center;
-	width: 80vw;
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: 4000;
 }
-.contentTable{
+.contentGrid{
+	box-shadow: 0px 0px 10px black;
+	margin-top: 100px; 
 	width: 100%;
-	border-collapse: collapse;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 500px;
 }
-.contentTable tr:nth-child(2){
-	background-color: grey;
+.contentItem{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
-.contentTable tr td{
-	padding: 20px;
+#contentText{
+	color: #FFFFFF;
+	background-color: #005d0e;
+	box-shadow: 0px 0px 5px 0px black;
+	z-index: 1;
+}
+#contentText p{
+	margin: 25px;
+}
+.contentImg{
+	height: 110%;
+	
 }
 .head{
 	text-align: center;
