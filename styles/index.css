@@ -59,81 +59,79 @@ body, html{
     width: 10px;
     transform: rotateZ(-135deg);
 }
-#carousel{
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: 100px;
-	width: 800px; 
-	height: 250px;
-	align-content: center;
+.carousel-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 800px;
 }
-#carousel table{
-	margin-left: auto;
-	margin-right: auto;
+.carousel-wrapper * {
+  box-sizing: border-box;
 }
-#carousel td{
-	width: auto;
-	height: 250px;
+.carousel {
+  transform-style: preserve-3d;
 }
-#carousel tr td img{
-	padding: 15px;
+.carousel__photo {
+  vertical-align: middle;
+  opacity: 0;
+  position: absolute;
+  top:0;
+  height: 300px;
+  margin: auto;
+  padding: 1rem 4.5rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
 }
-#carousel tr td:nth-child(1){
-	display: inline;
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
 }
-#carousel tr td:nth-child(2){
-	display: inline;
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
 }
-#carousel tr td:nth-child(3){
-	display: none;
+.carousel__photo.prev {
+  transform: translateX(-100%); /* Move 'prev' item to the left */
 }
-#carousel tr td:nth-child(4){
-	display: none;
+.carousel__photo.next {
+  transform: translateX(100%); /* Move 'next' item to the right */
 }
-#carousel tr td:nth-child(5){
-	display: none;
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #005d0e;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 1001; /* Sit on top of everything */
+  border: 1px solid black;
 }
-#carousel img{
-	height: 250px;
+.carousel__button--prev {
+  left:0;
 }
-#carousel div{
-	background-color: #005d0e;
+.carousel__button--next {
+  right:0;
 }
-.prev{
-	z-index: -1;
-	text-align: center;
-	width: 25px;
-	background-color: #005d0e;
-	box-shadow: 0px 0px 3px #000000;
-	border-radius: 5px 0px 0px 5px;
-	color: #FFFFFF;
-	font-size: 28pt;
-	float: left;
-	position: relative;
-	bottom: 175px;
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  transform: translate(-50%, -50%) rotate(135deg);
 }
-.next{
-	z-index: -1;
-	text-align: center;
-	width: 25px;
-	background-color: #005d0e;
-	box-shadow: 0px 0px 3px #000000;
-	border-radius: 0px 5px 5px 0px;
-	color: #FFFFFF;
-	font-size: 28pt;
-	float: right;
-	position: relative;
-	bottom: 175px;
-}
-#photo{
-	background-image: url("../images/family.png");
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 400px;
-	width: 50vw;
-	padding: 0;
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 .button{
 	z-index: -1;
@@ -167,7 +165,7 @@ body, html{
 	width: 100%;
 	display: grid;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: 500px;
+	grid-template-rows: 500px 500px 500px 500px;
 }
 .contentItem{
 	width: 100%;
