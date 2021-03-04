@@ -1,14 +1,14 @@
 
         let inventoryData = [
-            { name: 'A1', available: 5},
+            { name: 'A1', available: 4},
             { name: 'B1', available: 5},
             { name: 'B1A', available: 5},
             { name: 'C1', available: 5},
-            { name: 'C2', available: 5}                                 
+            { name: 'C2', available: 5},                                 
         ];
 
         window.onload = () => {
-            loadTableData(inventoryData);
+        loadTableData(inventoryData);
         };
 
         function loadTableData(inventoryData) {
@@ -22,5 +22,12 @@
 
             tableBody.innerHTML = dataHtml;
         };
+
+        function saveData() {
+            const name = document.getElementById('inventory.name');
+            const room = document.getElementById('inventory.available');
+            console.log(name, room)
+        }
+
 
 

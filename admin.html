@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Floorplans | The Grove at Spring Branch Apartments</title>
+		<link rel="icon" href="./images/tree.png">
+		<link rel="stylesheet" type="text/css" href="./styles/styles.css">
+		<link rel="stylesheet" type="text/css" href="./styles/javascript.css">		
+	</head>
+
+	<script src="inventory.js" defer></script>
+
+
+	<body>
+		<table>
+			<td>
+				<form>
+					<div>
+						<label>Floorplan Name</label>
+						<input type="text" name="nameValue" id="name">
+					</div>
+					<div>
+						<label># of Rooms</label>
+						<input type="number" name="roomValue" id="room">
+					</div>
+					<div>
+						<button onclick="saveData()">Submit</button>
+					</div>	
+
+				</form>
+			</td>	
+
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th>Floorplan</th>
+						<th># of Available Rooms</th>
+					</tr>
+				</thead>
+
+				<tbody id="tableData"></tbody>
+			</table>
+
+
+		<table>
+
+	
+	</body>
+
+
+
+
+</html>
