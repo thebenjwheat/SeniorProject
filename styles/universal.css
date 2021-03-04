@@ -61,6 +61,9 @@ footer a:visited, footer a:link, footer a:active{
 	top: 90px;
 	right: 50px;
 }
+#applyHere:hover{
+	cursor: pointer;
+}
 #phoneNum{
 	color: #009216;
 }

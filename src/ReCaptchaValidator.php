@@ -48,3 +48,4 @@ class ReCaptchaValidator
 		return false;
 	}
 }
+
