@@ -24,3 +24,4 @@ $validator->field('message')->maxLength(6000);
 $pp->sendEmailTo('thebjw@uw.edu'); // GROVE EMAIL
 
 echo $pp->process($_POST);
+

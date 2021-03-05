@@ -267,3 +267,5 @@ class FormHandler
 		$this->mailer->Body  = $content;
 	}
 }
+
+?>
