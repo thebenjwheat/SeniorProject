@@ -23,12 +23,9 @@ function updateInventory() {
 	 loadJSON(function(response) {
 	  // Parse JSON string into object
 	    var actual_JSON = JSON.parse(response);
-	    readJson(actual_JSON);
+	    console.log(actual_JSON);
 	 });
 	}
 	init();
-	function readJson(actualJson){
-		console.log("Hello World!");
-	}
 }
 
