@@ -18,16 +18,17 @@ function updateInventory() {
 	var B1ANew = document.getElementById("inventory").elements.namedItem("B1A").value;
 	var C1New = document.getElementById("inventory").elements.namedItem("C1").value;
 	var C2New = document.getElementById("inventory").elements.namedItem("C2").value;
-	
-	var A1 = document.getElementById("A1");
-	var B1 = document.getElementById("B1");
-	var B1A = document.getElementById("B1A");
-	var C1 = document.getElementById("C1");
-	var C2 = document.getElementById("C2");
 
-	loadJSON(function(response) {
-    var actual_JSON = JSON.parse(response);
- });
-	console.log(actual_JSON);
+	function init() {
+	 loadJSON(function(response) {
+	  // Parse JSON string into object
+	    var actual_JSON = JSON.parse(response);
+	    readJson(actual_JSON);
+	 });
+	}
+	init();
+	function readJson(actualJson){
+		console.log(actualJson);
+	}
 }
 
