@@ -28,7 +28,7 @@ function updateInventory() {
 	}
 	init();
 	function readJson(actualJson){
-		console.log(JSON.stringify(actualJson));
+		console.log(JSON.parse(actualJson));
 	}
 }
 
