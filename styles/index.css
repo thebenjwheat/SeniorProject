@@ -216,3 +216,11 @@ p.content{
 .head{
 	text-align: center;
 }
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	color: #FFFFFF;
+	background-color: #012907;
+	height: 150px;
+}
