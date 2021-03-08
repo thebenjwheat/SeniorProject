@@ -100,9 +100,17 @@ footer a:visited, footer a:link, footer a:active{
 }
 footer{
 	width: 100%;
-	position: absolute;
 	bottom: 0;
 	color: #FFFFFF;
 	background-color: #012907;
 	height: 150px;
+	margin-top:-150px;
+}
+
+.push{
+	height: 250px;
+}
+
+.spush {
+	height: 100px;
 }
