@@ -1,38 +1,10 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>Grove at Spring Branch Apartments - Contact Page</title>
-		<link rel="icon" href="./images/tree.png">
-		<link rel="stylesheet" type="text/css" href="./styles/universal.css">
-		<link rel="stylesheet" type="text/css" href="./styles/contactstyles.css">
-		<meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="formstyle.css" />
-        <script src="form.js"></script>
-	</head>
-    <header class="banner">
-            <a href="index.html">
-                <img src="./images/txtLogo.png" id="logo">
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="floorplans.html">Floorplans</a></li>
-                <li><a href="amenities.html">Amenities</a></li>
-                <li><a href = "neighborhood.html">Neighborhood</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="phoneNum">(346) 229-1117</li>
-            </ul>
-            <a target="_blank" rel="noopener noreferrer" href="Application.pdf" id="applyHere">Apply Here</a>
-        </header>
-	<body class="contact-body">
-
-	<div class="contact-title">
-		<h1>Contact Us</h1>
-		<h2>Property Address</h2>
-		<h2>Office Hours</h2>
-	</div>
-<div class="form-container">
+<head>
+<title>Contact Us Form</title>
+<link rel="stylesheet" type="text/css" href="../contactform/formstyle.css" />
+</head>
+<body>
+    <div class="form-container">
         <form name="frmContact" id="" frmContact"" method="post"
             action="" enctype="multipart/form-data"
             onsubmit="return validateContactForm()">
@@ -119,7 +91,5 @@
             return valid;
         }
 </script>
-
-	</body>
-
+</body>
 </html>
