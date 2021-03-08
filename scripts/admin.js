@@ -12,10 +12,10 @@ function loadJSON(callback) {
     xobj.send(null);  
  }
  function sendJSON(jsonObj) {
- 	var xobj = new XMLHttpRequest();
- 	xobj.overrideMimeType("application/json");
- 	xobj.open('POST', './scripts/my_data.json', true);
- 	xobj.send(JSON.stringify(jsonObj));
+ 	var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+ 	xmlhttp.open("POST", './scripts/my_data.json');
+	xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+	xmlhttp.send(JSON.stringify(jsonObj));
  }
 
 function updateInventory() {
