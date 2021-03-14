@@ -1,34 +1,16 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Grove at Spring Branch Apartments - Contact Page</title>
-		<link rel="icon" href="./images/tree.png">
-		<link rel="stylesheet" type="text/css" href="./styles/universal.css">
-		<link rel="stylesheet" type="text/css" href="./styles/contactstyles.css">
-		<meta charset="utf-8">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HTML5 Contact Form With File Upload - reusable form</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" href="./form/form.css" >
-        <script src="./form/form.js"></script>
-	</head>
-    <header class="banner">
-            <a href="index.html">
-                <img src="./images/txtLogo.png" id="logo">
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="floorplans.html">Floorplans</a></li>
-                <li><a href="amenities.html">Amenities</a></li>
-                <li><a href = "neighborhood.html">Neighborhood</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="phoneNum">(346) 229-1117</li>
-            </ul>
-            <a target="_blank" rel="noopener noreferrer" href="Application.pdf" id="applyHere">Apply Here</a>
-        </header>
-	<body class="contact-body">
-
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
         <div class="container">
             <div id="form-main">
                 <div id="form-div">
@@ -46,7 +28,7 @@
                             <input name="image" type="file" id="file" class="feedback-input">
                         </p>
                         <div class="submit">
-                            <button type="submit" class="button-blue">Submit</button>
+                            <button type="submit" class="button-blue">SUBMIT</button>
                             <div class="ease"></div>
                         </div>
                     </form>
@@ -54,13 +36,11 @@
                         <h4>
                             Error
                         </h4>
-                        Sorry, there seems to be an error in your form...
+                        Sorry there was an error sending your form. 
                     </div>
-                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h2>Your Message Was Sent Successfully!</h2> </div>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h2>Success! Your Message was Sent Successfully.</h2> </div>
                 </div>
             </div>
         </div>
-
-	</body>
-
+    </body>
 </html>
